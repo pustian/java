@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="false">
+    <!-- Set INFO to WARN for warning-level logging, or DEBUG for debug-level logging. -->
+    <!-- Output to terminal by default. -->
+    <appender name="terminal" class="org.apache.log4j.ConsoleAppender">
+        <param name="Threshold" value="trace" />
+        <param name="Target" value="System.out" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <!-- param name="ConversionPattern" value="%d{ABSOLUTE} [%t] %-5p [%c{1}] %m%n"/ -->
+            <param name="ConversionPattern" value="%-d [%t] %-5p %c:%L - %m%n" />
+        </layout>
+    </appender>
+    <!-- Optional: asynchronous file location (set <appender-ref ref="asynch-file"/> in root below). -->
+    <appender name="out-file" class="org.apache.log4j.RollingFileAppender">
+        <param name="Threshold" value="INFO" />
+        <!-- <param name="file" value="${app.logfile}"/> -->
+        <param name="file" value="log/automation.log" />
+        <param name="MaxFileSize" value="50MB" />
+        <param name="MaxBackupIndex" value="50" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%-d [%t] %-5p %c %X{processID}-%X{queryIndex} -  %m  %n" />
+        </layout>
+    </appender>
+<!--    &lt;!&ndash; Optional: asynchronous file output (set <appender-ref ref="asynch-file"/> in root below). &ndash;&gt;
+    <appender name="asynch-file" class="org.apache.log4j.AsyncAppender">
+        <param name="locationInfo" value="false" />
+        <appender-ref ref="out-file" />
+    </appender>-->
+
+
+    <logger name="tian.pusen.info" additivity="false">
+        <level value="trace" />
+        <appender-ref ref="terminal" />
+    </logger>
+    <root>
+        <level value="INFO" />
+        <appender-ref ref="terminal" />
+        <appender-ref ref="out-file" />
+    </root>
+</log4j:configuration>

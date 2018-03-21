@@ -1,0 +1,5 @@
+2017-04-21 11:34:46  [ main:8 ] - [ FATAL ]  Output logger  at level fatal class LoggerDisplay
+2017-04-21 11:34:46  [ main:8 ] - [ ERROR ]  Output logger  at level error class LoggerDisplay
+2017-04-21 11:34:46  [ main:8 ] - [ WARN ]  Output logger  at level warn class LoggerDisplay
+2017-04-21 11:34:46  [ main:8 ] - [ INFO ]  Output logger  at level info class LoggerDisplay
+2017-04-21 11:34:46  [ main:9 ] - [ DEBUG ]  Output logger  at level debug class LoggerDisplay

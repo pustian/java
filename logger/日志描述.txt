@@ -1,0 +1,3 @@
+http://www.importnew.com/16331.html
+
+日志实际输出界别除了 appender中外还跟logger中的级别相关

@@ -1,0 +1,9 @@
+2017-04-21 10:39:36,184 [main] ERROR tian.pusen.info.LoggerDisplay - -  Output logger  at level error class LoggerDisplay  
+2017-04-21 10:39:36,186 [main] WARN  tian.pusen.info.LoggerDisplay - -  Output logger  at level warn class LoggerDisplay  
+2017-04-21 10:39:36,186 [main] INFO  tian.pusen.info.LoggerDisplay - -  Output logger  at level info class LoggerDisplay  
+2017-04-21 10:39:36,186 [main] DEBUG tian.pusen.info.LoggerDisplay - -  Output logger  at level debug class LoggerDisplay  
+2017-04-21 10:39:36,186 [main] TRACE tian.pusen.info.LoggerDisplay - -  Output logger  at level trace class LoggerDisplay  
+2017-04-21 10:39:49,868 [main] ERROR tian.pusen.info.LoggerDisplay - -  Output logger  at level error class LoggerDisplay  
+2017-04-21 10:39:49,871 [main] WARN  tian.pusen.info.LoggerDisplay - -  Output logger  at level warn class LoggerDisplay  
+2017-04-21 10:39:49,871 [main] INFO  tian.pusen.info.LoggerDisplay - -  Output logger  at level info class LoggerDisplay  
+2017-04-21 10:39:49,871 [main] DEBUG tian.pusen.info.LoggerDisplay - -  Output logger  at level debug class LoggerDisplay  

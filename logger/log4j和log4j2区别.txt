@@ -1,0 +1,7 @@
+log4j 和 log4j2 的区别
+    log4j想要生效，我们需要在web.xml中进行配置，
+    log4j2就比较简单，以maven工程为例，我们只需要把log4j2.xml放到工程resource目录下就行了。
+
+    大家记住一个细节点，是log4j2.xml，而不是log4j.xml，xml名字少个2都不行！
+
+    最关键的最大的不同，那就是配置文件的区别

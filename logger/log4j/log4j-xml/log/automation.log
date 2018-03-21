@@ -1,0 +1,4 @@
+2017-04-21 10:20:20,854 [main] FATAL tian.pusen.app.Log4jXMLMain - -  Output logger  at level fatal 1st  
+2017-04-21 10:20:20,858 [main] ERROR tian.pusen.app.Log4jXMLMain - -  Output logger  at level error 1st  
+2017-04-21 10:20:20,862 [main] WARN  tian.pusen.app.Log4jXMLMain - -  Output logger  at level warn 1st  
+2017-04-21 10:20:20,862 [main] INFO  tian.pusen.app.Log4jXMLMain - -  Output logger  at level info 1st  
