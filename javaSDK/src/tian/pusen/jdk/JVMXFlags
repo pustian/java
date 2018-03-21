@@ -1,0 +1,10 @@
+JVM flag类别
+	标准flags，标准flags一般都是最基本的flags，而且在将来JVM的发布版本中基本不会改变的，例如-server -client
+	X flags，这类的特点是非标准，随着JVM版本不同可能会改变；这类flags都是以-X开头，通过java -X可以列出所有(少了-Xcomp)
+	XX flags，这类也是非标准的。Xflags很稳定，XXflags可能更加实验性(主要被JVM开发者用于debug和优化JVM实现)。
+	在使用X flags或者XX flags之前一定要明白flag的使用方式和可能带来的副作用。XX flags都以-XX开头，但是语法根据flag type不同而不同
+
+	
+
+http://www.jianshu.com/p/9f70a980e40a	
+http://blog.csdn.net/zhoudaxia/article/details/26454421/

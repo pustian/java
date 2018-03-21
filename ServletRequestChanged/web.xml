@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>jfpay_preposing</display-name>
+  <listener>
+    <display-name>applicationListener</display-name>
+    <listener-class>
+			com.jfpay.preposing.utils.ApplicationListener
+		</listener-class>
+  </listener>
+  
+  <servlet>
+    <servlet-name>WebWithdrawal</servlet-name>
+    <servlet-class>
+			com.jfpay.preposing.action.WebWithdrawalAction
+	</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WebWithdrawal</servlet-name>
+    <url-pattern>/webWithdrawal</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SendMobileMac</servlet-name>
+    <servlet-class>com.jfpay.preposing.action.SendMobileMacAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SendMobileMac</servlet-name>
+    <url-pattern>/sendMobileMac</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>FileServlet</servlet-name>
+    <url-pattern>*.js</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>FileServlet</servlet-name>
+    <url-pattern>*.xml</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>FileServlet</servlet-name>
+    <url-pattern>*.css</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>FileServlet</servlet-name>
+    <url-pattern>*.png</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>FileServlet</servlet-name>
+    <url-pattern>*.gif</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>FileServlet</servlet-name>
+    <url-pattern>*.jpg</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>FileServlet</servlet-name>
+    <url-pattern>*.ico</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>FileServlet</servlet-name>
+    <url-pattern>*.html</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>FileServlet</servlet-name>
+    <url-pattern>*.htm</url-pattern>
+  </servlet-mapping>	
+  
+  <servlet>
+    <servlet-name>JFpay</servlet-name>
+    <servlet-class>
+			com.jfpay.preposing.action.SubClientInfUnifiedAction
+	</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JFpay</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  </web-app>

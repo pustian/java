@@ -1,0 +1,12 @@
+1， 新增4个类，修改web.xml 中配置
+WEB-INF/classes/com/jfpay/preposing/action:
+-rw-rw-r-- 1 weblogic weblogic 1791 11月 26 12:10 SubClientInfUnifiedAction.class
+WEB-INF/classes/com/jfpay/preposing/utils:
+-rw-rw-r-- 1 weblogic weblogic 3428 11月 24 18:57 Base64Utils.class
+-rw-rw-r-- 1 weblogic weblogic 2831 11月 26 12:51 ParameterRequestWrapper.class
+-rw-rw-r-- 1 weblogic weblogic 4566 11月 24 18:57 RSAUtil.class
+web.xml 中 ClientInfUnifiedAction --> SubClientInfUnifiedAction
+  <servlet>
+    <servlet-name>JFpay</servlet-name>
+    <servlet-class> com.jfpay.preposing.action.SubClientInfUnifiedAction </servlet-class>
+  </servlet>
